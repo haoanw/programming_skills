@@ -51,12 +51,14 @@ Not feature work — upkeep.
 
 - **`/improve-codebase-architecture`** — run whenever you have a spare moment to keep the codebase good for agents to operate in. It surfaces **deepening opportunities**; picking one _generates an idea_ you can take into the main flow at `/grill-with-docs`. It's the survey that finds the candidates; **`/codebase-design`** (below) is the bench you design the chosen one on.
 
-## Vocabulary underneath
+## Disciplines underneath
 
-Two model-invoked references that run *beneath* the other skills — each the single source of truth for its vocabulary. Reach for them directly when the **words**, not the process, are the problem; or let the skills above pull them in.
+Four model-invoked references run *beneath* the other skills. Reach for them directly when their discipline is the task, or let the build and review flows pull them in.
 
 - **`/domain-modeling`** — sharpen the project's *domain* language: challenge a fuzzy term, resolve an overloaded word ("account" doing three jobs), record a hard-to-reverse decision as an ADR. It's the active discipline `/grill-with-docs` drives to keep `CONTEXT.md` a clean glossary.
 - **`/codebase-design`** — the deep-module vocabulary (module, interface, depth, seam, adapter, leverage, locality) for designing a module's *shape*: a lot of behaviour behind a small interface at a clean seam. `/tdd` and `/improve-codebase-architecture` both speak it.
+- **`/clean-code`** — pragmatic code-level quality for implementation and review: readable intent, cohesive functions and classes, explicit side effects, useful errors, behavior-focused tests, and small verified refactorings. `/implement` and the Standards axis of `/code-review` apply it by default.
+- **`/clean-architecture`** — system-level discipline for policy/mechanism separation, source dependency direction, justified boundaries, adapters, and incremental architecture enforcement. `/implement` and `/code-review` pull it in when a change affects structure across modules or external mechanisms.
 
 ## Crossing sessions
 

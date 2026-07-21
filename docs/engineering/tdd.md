@@ -28,7 +28,7 @@ The leading idea is the **red-green loop**: write one failing test (red), add ju
 
 Two rules keep the tests honest. A good test reads like a specification ("user can checkout with valid cart") and exercises real code paths through the public API, so renaming an internal function never breaks it. And expected values come from an independent source of truth — a known-good literal, a worked example, the spec — never recomputed the way the code computes them, which is how a **tautological** test passes by construction and tells you nothing.
 
-Refactoring only happens once the suite is green; never while red.
+Refactoring only happens once the suite is green; never while red. Each green slice follows [clean-code](https://aihero.dev/skills-clean-code), and [clean-architecture](https://aihero.dev/skills-clean-architecture) joins only when that slice changes a dependency or module boundary. Neither discipline is permission to build beyond the current behavior.
 
 ## It's working if
 

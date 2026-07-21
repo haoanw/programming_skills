@@ -109,6 +109,8 @@ Tool preference:
 
 Write the regression test **before the fix** — but only if there is a **correct seam** for it.
 
+Apply `/clean-code` to keep the fix focused, explicit, and behavior-preserving. Apply `/clean-architecture` only when the demonstrated root cause requires changing a dependency or system boundary; do not turn a local bug fix into an unproven redesign.
+
 A correct seam is one where the test exercises the **real bug pattern** as it occurs at the call site. If the only available seam is too shallow (single-caller test when the bug needs multiple callers, unit test that can't replicate the chain that triggered the bug), a regression test there gives false confidence.
 
 **If no correct seam exists, that itself is the finding.** Note it. The codebase architecture is preventing the bug from being locked down. Flag this for the next phase.

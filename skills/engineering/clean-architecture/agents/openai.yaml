@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clean Architecture"
+  short_description: "Protect boundaries and dependency direction"
+  default_prompt: "Use $clean-architecture to review this system design and its dependency boundaries."
