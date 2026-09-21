@@ -46,7 +46,7 @@ When repairing architecture:
 1. Protect current behavior with tests.
 2. Establish a controlled internal entry point.
 3. Invert incorrect dependencies.
-4. isolate external types and move business rules inward.
+4. Isolate external types and move business rules inward.
 5. Add automated dependency enforcement.
 6. Split deployment units only when operational needs justify it.
 
