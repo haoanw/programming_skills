@@ -122,7 +122,7 @@ Functional programming reduces concurrency and temporal-coupling risks by constr
 
 # 6. SOLID: Module-Level Design Rules
 
-## 6.1 SRP — Single Responsibility Principle
+## 6.1 SRP: Single Responsibility Principle
 
 ### Core Meaning
 
@@ -142,7 +142,7 @@ Ask:
 - Use a Facade for coordination without merging responsibilities again;
 - Avoid shared mutable data becoming a hidden coupling hub.
 
-## 6.2 OCP — Open-Closed Principle
+## 6.2 OCP: Open-Closed Principle
 
 ### Core Meaning
 
@@ -163,7 +163,7 @@ Stable, high-level policy should be extensible by adding implementations rather 
 - Place abstractions around observed or highly probable axes of change.
 - If every new type still requires edits to several central `switch` statements, the extension boundary is incomplete.
 
-## 6.3 LSP — Liskov Substitution Principle
+## 6.3 LSP: Liskov Substitution Principle
 
 ### Core Meaning
 
@@ -179,7 +179,7 @@ An implementation type must honor the contract of its interface. Callers should 
 
 LSP applies not only to inheritance, but also to REST implementations, message consumers, storage adapters, and plugins.
 
-## 6.4 ISP — Interface Segregation Principle
+## 6.4 ISP: Interface Segregation Principle
 
 ### Core Meaning
 
@@ -196,7 +196,7 @@ Clients should not depend on capabilities they do not use.
 
 Interfaces can also become too fragmented, increasing navigation and assembly cost. Split them by stable usage patterns, not by creating one interface per method.
 
-## 6.5 DIP — Dependency Inversion Principle
+## 6.5 DIP: Dependency Inversion Principle
 
 ### Core Meaning
 
@@ -217,7 +217,7 @@ A component is a unit of code that can be built, released, or deployed independe
 
 ## 7.1 The Three Principles of Component Cohesion
 
-### REP — Reuse/Release Equivalence Principle
+### REP: Reuse/Release Equivalence Principle
 
 Code reused together should be released together with a coherent version and release notes.
 
@@ -227,13 +227,13 @@ Check:
 - Are consumers forced to import large amounts of unrelated code?
 - Can compatibility be described clearly when the component is upgraded?
 
-### CCP — Common Closure Principle
+### CCP: Common Closure Principle
 
 Code that changes for the same reason and at the same time should reside in the same component. This is the component-level form of SRP.
 
 Goal: a single requirement change should affect as few components as practical.
 
-### CRP — Common Reuse Principle
+### CRP: Common Reuse Principle
 
 Code that is not reused together should not force clients to depend on it together. This is the component-level form of ISP.
 
@@ -247,7 +247,7 @@ The Agent must not claim that one permanently optimal component size exists. Bal
 
 ## 7.2 The Three Principles of Component Coupling
 
-### ADP — Acyclic Dependencies Principle
+### ADP: Acyclic Dependencies Principle
 
 The component dependency graph must remain a directed acyclic graph.
 
@@ -261,7 +261,7 @@ When a cycle appears, consider:
 
 Do not hide cycles by moving everything into a `common` package.
 
-### SDP — Stable Dependencies Principle
+### SDP: Stable Dependencies Principle
 
 Less stable components should depend on more stable components. Stability means "depended on by many components and therefore difficult to change," not "high code quality."
 
@@ -271,7 +271,7 @@ Rules:
 - Peripheral mechanisms may depend on core policy.
 - If a stable component depends on a highly volatile SDK, invert the boundary.
 
-### SAP — Stable Abstractions Principle
+### SAP: Stable Abstractions Principle
 
 The more stable a component is, the more it should use abstraction to remain extensible. The more concrete a component is, the easier it should be to change.
 
@@ -421,7 +421,7 @@ Possible forms include:
 
 # 11. Typical Clean Architecture Layers
 
-## 11.1 Entities — Enterprise/Domain Rules
+## 11.1 Entities: Enterprise/Domain Rules
 
 Contain long-lived business rules and invariants that span use cases.
 
@@ -432,7 +432,7 @@ Characteristics:
 - Can be tested independently;
 - Should not be merely ORM data containers.
 
-## 11.2 Use Cases — Application Business Rules
+## 11.2 Use Cases: Application Business Rules
 
 Orchestrate a specific user goal or system action:
 
@@ -750,7 +750,7 @@ A complex system may expose a stable test entry point, but it must not bypass se
 
 Embedded software still requires separation between policy and mechanism. Business and control rules should not be scattered through register access, drivers, and RTOS API calls.
 
-## 21.2 HAL — Hardware Abstraction Layer
+## 21.2 HAL: Hardware Abstraction Layer
 
 A Hardware Abstraction Layer isolates:
 
@@ -774,7 +774,7 @@ class MotorPort(Protocol):
 
 It should not depend directly on a vendor SDK.
 
-## 21.3 OSAL — Operating System Abstraction Layer
+## 21.3 OSAL: Operating System Abstraction Layer
 
 Introduce necessary isolation for tasks, threads, locks, clocks, timers, and queues so policy is not tied to a specific RTOS or operating system.
 

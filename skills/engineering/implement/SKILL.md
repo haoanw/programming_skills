@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 Implement the work described by the user in the spec or tickets.
 
-Apply `/clean-code` while writing production code and tests. Apply `/clean-architecture` whenever the change creates or alters module boundaries, dependency direction, business-rule placement, external adapters, or composition. Repository standards and explicit spec constraints take precedence over either heuristic.
+Call the Skill tool with "clean-code" while writing production code and tests. Call the Skill tool with "clean-architecture" whenever the change creates or alters module boundaries, dependency direction, business-rule placement, external adapters, or composition. Repository standards and explicit spec constraints take precedence over either heuristic.
 
 Use /tdd where possible, at pre-agreed seams.
 

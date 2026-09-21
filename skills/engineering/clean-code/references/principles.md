@@ -1025,7 +1025,7 @@ Purely stylistic advice. It must not block merge unless explicitly required by p
 [Mergeable / Mergeable after changes / Do not merge]
 
 ## Main Findings
-1. [BLOCKER|MAJOR|MINOR] file:line — Finding title
+1. [BLOCKER|MAJOR|MINOR] Finding title (file:line)
    - Observation:
    - Risk:
    - Rule:

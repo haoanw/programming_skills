@@ -26,7 +26,7 @@ Reach for it whenever local code is difficult to understand, verify, or change. 
 
 The discipline starts by understanding purpose, observable behavior, side effects, constraints, and risk. It then protects that behavior with tests where practical and improves the code in small verified steps.
 
-Its leading idea is **low cognitive load**, not smallness for its own sake. Honest names, one level of abstraction, cohesive reasons to change, explicit dependencies, and visible effects matter because they make future changes safer—not because they satisfy a style quota.
+Its leading idea is **low cognitive load**, not smallness for its own sake. Honest names, one level of abstraction, cohesive reasons to change, explicit dependencies, and visible effects matter because they make future changes safer, not because they satisfy a style quota.
 
 ## Pragmatic by design
 

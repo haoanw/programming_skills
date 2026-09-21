@@ -26,7 +26,7 @@ Reach for it when the relationship between parts is the problem. For naming, fun
 
 The leading idea is the **dependency rule**: source-code dependencies point toward higher-level, more stable policy even when runtime calls travel outward. Use cases own the ports they need; databases, HTTP, messaging, ROS/DDS, devices, and frameworks implement those ports at the edge. Boundary data stays independent of external types.
 
-Architecture becomes real through controlled entry points, module visibility, an acyclic dependency graph, composition at the edge, and automated architecture tests—not through directory names or diagrams alone.
+Architecture becomes real through controlled entry points, module visibility, an acyclic dependency graph, composition at the edge, and automated architecture tests, not through directory names or diagrams alone.
 
 ## Evolve boundaries incrementally
 
